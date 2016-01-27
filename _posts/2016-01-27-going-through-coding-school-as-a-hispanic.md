@@ -29,7 +29,9 @@ I like to joke that people that grow up in the city have a “bullshit radar” 
 
 The person that appeared on my screen was [Jorge Tellez](https://twitter.com/novohispano), Director Of Growth & Operation for Turing. What made this such an eye opening experience for me was the fact that not only did Turing have a hispanic on their team, he was also in a leadership role! It was honestly a *sigh* of relief.
 
-While teaching myself programming and interacting with other developers on twitter, I noticed a sever lack of hispanics anywhere in the tech industry. It did not instill a ton of confidence on my prospects as a Puerto Rican in tech. That has always been a tough pill for me to swallow. “I know there are tons of smart, brilliant and more than capable hispanics out there. Why can’t I find them in tech?”
+While teaching myself programming and interacting with other developers on twitter, I noticed a sever lack of hispanics anywhere in the tech industry. It did not instill a ton of confidence on my prospects as a Puerto Rican in tech. That has always been a tough pill for me to swallow.
+
+> “I know there are tons of smart, brilliant and more than capable hispanics out there. Why can’t I find them in tech?”
 
 The thing is though there might not be nearly enough hispanics in tech, but the ones that have broken through are doing exceptional things. Jorge was an amazing representative of what Turing stood for. Not only did they want to help underrepresented groups with their career, they were actively apart of helping solve the diversity problem.
 
