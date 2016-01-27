@@ -9,7 +9,7 @@ title:               Julian Feliciano
 tagline:             'software developer & happy person!'
 description:         'Currently attending the Turing School of Software &amp; Design. Hit me up on twitter (<a href="https://twitter.com/julsfelic" target="_blank">@julsfelic</a>) if you wanna talk code, music &amp; watches.'
 url:                 http://julsfelic.github.com
-baseurl:             ''
+baseurl:             'http://julsfelic.github.com'
 paginate:            5
 
 # About/contact
