@@ -1,0 +1,29 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+# relative_permalinks: true
+
+# Setup
+title:               Julian Feliciano
+tagline:             'software developer & happy person!'
+description:         'Currently attending the Turing School of Software &amp; Design. Hit me up on twitter (<a href="https://twitter.com/julsfelic" target="_blank">@julsfelic</a>) if you wanna talk code, music &amp; watches.'
+url:                 http://lanyon.getpoole.com
+baseurl:             ''
+paginate:            5
+
+# About/contact
+author:
+  name:              Julian Feliciano
+  url:               https://twitter.com/julsfelic
+  email:             julsfelic@gmail.com
+
+# Custom vars
+version:             1.0.0
+
+# Gems
+gems: [jekyll-paginate]
+
+# Github
+github:
+  repo: https://github.com/julsfelic
