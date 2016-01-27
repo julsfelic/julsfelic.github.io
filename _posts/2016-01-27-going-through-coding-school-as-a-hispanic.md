@@ -25,7 +25,7 @@ There was still an ounce of skepticism before I made the decision to apply. Many
 
 I like to joke that people that grow up in the city have a “bullshit radar” that allows us to tell how genuine someone is. It never went off for Jeff, and gave me the confidence to apply. Making it through the first round of the application, next came the Google Hangout interview. As the video chat came up on my computer, I knew Turing was the school for me.
 
-## Wait! I’m Being Interviewed By Hispanic?
+## Wait! I’m Being Interviewed By A Hispanic?
 
 The person that appeared on my screen was [Jorge Tellez](https://twitter.com/novohispano), Director Of Growth & Operation for Turing. What made this such an eye opening experience for me was the fact that not only did Turing have a hispanic on their team, he was also in a leadership role! It was honestly a *sigh* of relief.
 
