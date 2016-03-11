@@ -243,7 +243,7 @@ talk about what is going on (because this README is getting to damn long!)
 ```
 
 ## Simple Slack: Real-Time Web For Beginners
-* Not sure if I'll get to this
+* TBA
 
 ## Other Cool Node Links
 * [Node.js](https://nodejs.org/en/)
