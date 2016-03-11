@@ -1,6 +1,6 @@
 ---
 layout: post
-title: From Ruby to Node: A Brief Introduction
+title: From Ruby to Node. A Brief Introduction
 ---
 
 This blog post was originally written as a student lead session for the
