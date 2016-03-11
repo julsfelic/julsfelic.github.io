@@ -1,14 +1,10 @@
 ---
 layout: post
-title: From Ruby to Node
+title: From Ruby to Node: A Brief Introduction
 ---
-
-# From Ruby to Node
 
 This blog post was originally written as a student lead session for the
 [Turing School of Software & Design](http://turing.io). You can find the github repo [here](https://github.com/julsfelic/from_ruby_to_node). Pull requests are welcomed!
-
-# From Ruby to Node.js: A Brief Introduction
 
 ## What is Node.js?
 
