@@ -19,7 +19,7 @@ To get started, clone done [this](https://github.com/julsfelic/webpack-boilerpla
 
 The first component we want to create is the main Landing component. This component will point to the root (`/`) of our application. We will first hardcode the rendering of this component into our application, then we will slowly introduce react router into the mix. First off, let's create a directory at `/client/components/` then create our Landing component:
 
-```js
+```jsx
 /* /client/components/Landing.js */
 
 import React from 'react';
@@ -42,7 +42,7 @@ export default Landing;
 
 This sets up a landing component that will eventually allow us to enter a username and navigate to that the users page. In order to render the Landing component we need to import it into our `App.js` file:
 
-```js
+```jsx
 /* /client/app.js */
 
 import React from 'react';
@@ -61,7 +61,7 @@ As it stands, we can type any route we want in the url and get the same componen
 
 Here is the updated code for `app.js`:
 
-```js
+```jsx
 /* /client/app.js */
 
 import React from 'react';
@@ -81,13 +81,13 @@ render(routes, document.getElementById('root'));
 
 Let's tackle this code piece by piece.
 
-```js
+```jsx
 import { Router, Route, browserHistory } from 'react-router';
 ```
 
 This brings in the necessary dependencies in order to use react router. `Router` provides the routing context, `Route` gives us the ability to create routes and `browserHistory` provides browsing history to the router to allow the back and foward controlls to work as expected.
 
-```js
+```jsx
 const routes = (
   <Router history={browserHistory}>
     <Route path="/" component={Landing} />
@@ -103,7 +103,7 @@ Next is our route definition. The `<Route>` component expects two props: the pat
 
 We won't spend too much time with create this component. The main purpose for creating the NotFound component is to show that you can have a route that 'catches' any routes that are not found in our routing. Here is the code for the NotFound component:
 
-```js
+```jsx
 /* /client/components/NotFound.js */
 
 import React from 'react';
@@ -119,7 +119,7 @@ export default NotFound;
 
 And in `app.js`:
 
-```js
+```jsx
 /* /client/app.js */
 
 import React from 'react';
@@ -141,7 +141,7 @@ render(routes, document.getElementById('root'));
 
 The main piece of code to look at is:
 
-```js
+```jsx
 <Route path="*" component={NotFound} />
 ```
 
@@ -153,7 +153,7 @@ Our last component, `User` proposes a few interesting problems. Firstly, how do 
 
 For our initial attempt, let's render a stub User component so we can create a route for it. Here is that component:
 
-```js
+```jsx
 /* /client/components/User.js */
 
 import React from 'react';
@@ -169,7 +169,7 @@ export default User;
 
 And the corresponding changes to `app.js`:
 
-```js
+```jsx
 /* /client/app.js */
 
 import React from 'react';
@@ -193,7 +193,7 @@ render(routes, document.getElementById('root'));
 
 If we take a closer look at our new route for User:
 
-```js
+```jsx
 <Route path="/users/:userId" component={User} />
 ```
 
@@ -201,7 +201,7 @@ You'll notice something a little different about it. Inside of path, we can spec
 
 When using react router, we have access to any dynamic parameters through `props`. Specifically, we can access the `:userId` parameter through `this.props.params.userId`:
 
-```js
+```jsx
 /* /client/components/User.js */
 
 import React from 'react';
@@ -221,7 +221,7 @@ We could use `this.props.params.userId` to access the userId. Instead, I'm using
 
 It would be nice if from the user page we could navigate back to the root page without having to go into the url and type in the root of the app. Luckily, react router provides another module that allows for easy link creation. Inside of the User component, let's add a home link that takes us back to the landing page:
 
-```js
+```jsx
 /* /client/components/User.js */
 
 import React from 'react';
@@ -247,7 +247,7 @@ The finish line is almost near! All that is left is wiring up our landing page s
 
 Behind the scenes, react router is using the HTML5 API pushState to update the url. Sometimes, we want to manually update the url ourselves. Luckily, react router gives us access to pushState so we can handle our case of navigating to a users page when they click submit. Here is the updated code:
 
-```js
+```jsx
 /* /client/components/Landing.js */
 
 import React from 'react';
@@ -280,14 +280,14 @@ export default Landing;
 
 There is quite a bit goign on now, so let's start from the top.
 
-```js
+```jsx
 import { History } from 'react-router';
 import reactMixin from 'react-mixin';
 ```
 
 In order to gain access to pushState, we need to include the `History` module from react router. Once we have that, we need to mixin the module into our Landing class. Unfortunetly with ES6 classes, they do not currently support mixins, so we are using the `reactMixin` module to allow us to mixin History into Landing.
 
-```js
+```jsx
   loadUser(e) {
     e.stopPropagation();
     let userName = this.refs.username.value;
@@ -297,7 +297,7 @@ In order to gain access to pushState, we need to include the `History` module fr
 
 This is the function we want fired when the user clicks on submit. The first thing it does is stop any event from bubbling past the button. Secondly, we grab the value of the input field using the `ref` we had given it earlier. To grab a ref, we use the incantation of `this.refs.name-of-ref`. From there, we can grab the value of our input. Lastly, we use the `history` function that was mixed in to our class to access `pushState`. For our application, we won't worry about the first argument past into `pushState`. The second argument we give it is the url we want to go to. Since we have the value of the username through our ref, we can build up the url needed to navigate to the user page.
 
-```js
+```jsx
 reactMixin.onClass(Landing, History);
 ```
 
